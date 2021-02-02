@@ -1,7 +1,7 @@
 # PHP-BigBlueButton
 Api for Bigbluebutton with the most important functions
 
-## Construct ##:
+## Construct:
 ```
    require "api.php";
    $url = "http://test-install.blindsidenetworks.com/bigbluebutton/";
@@ -9,4 +9,4 @@ Api for Bigbluebutton with the most important functions
    $api = new BBBApi($url,$secret); 
    ```
 
-## Function-Documentation in api.php ##  
+## Documentation for every function in api.php
