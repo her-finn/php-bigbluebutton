@@ -48,10 +48,6 @@
             }
             return(array($return['meetings']['meeting']));
         }
-        function isMeetingRunning($id){
-            $return = $this->request("isMeetingRunning",array("meetingID"=>$id));
-            return($return['running']);
-        }
         /*
             Create new Meetings - https://docs.bigbluebutton.org/dev/api.html#create
                 @name: Meeting name
@@ -191,6 +187,10 @@
             Check if Meeting is running
                 @id: Meeting-ID
         */
+        function isMeetingRunning($id){
+            $return = $this->request("isMeetingRunning",array("meetingID"=>$id));
+            return($return['running']);
+        }
         /*
             Publish Recording
                 @recordID: Record-ID (Multiple Records splitted by `,`)
